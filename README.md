@@ -10,7 +10,7 @@ To use the FileUploader library, follow these steps:
 
 2. Include the Library: Include the `FileUploader.php` file in your PHP project.
 
-    php
+    
     <?php
     include_once 'FileUploader.php';
     ?>
@@ -30,7 +30,7 @@ To upload files using the FileUploader library, follow these steps:
 
 1. Instantiate the FileUploader Class: Create an instance of the `FileUploader` class with the desired upload directory and optional settings.
 
-    php
+    
     <?php
     $uploadDir = 'uploads'; // Directory where files will be uploaded
     $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif']; // Allowed file extensions
@@ -43,7 +43,7 @@ To upload files using the FileUploader library, follow these steps:
 
 2. Handle File Upload: Process the uploaded file using the `upload` method. This method returns an array with information about the upload status.
 
-    php
+    
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
         $result = $uploader->upload($_FILES['file']);
@@ -60,7 +60,7 @@ To upload files using the FileUploader library, follow these steps:
 
 Here's a complete example of an HTML form to upload files using the FileUploader library:
 
-html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +84,7 @@ Here's a full example combining the FileUploader library and the file upload for
 
 FileUploader.php:
 
-php
+
 <?php
 
 class FileUploader
@@ -179,7 +179,7 @@ class FileUploader
 
 upload_form.php:
 
-html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,9 +195,6 @@ html
     </form>
 </body>
 </html>
-``
-
-`
 
 #### Conclusion
 
